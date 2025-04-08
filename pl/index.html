@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://book.squareofchanges.net">
     <title>Redirecting...</title>
     <script>
-        // Функция для редиректа на нужный язык
-        function redirectToLanguage(lang) {
-            if (lang === 'pl') {
-                window.location.href = 'https://book.squareofchanges.net/pl/';
-            } else {
-                window.location.href = 'https://book.squareofchanges.net/';
-            }
+        // Функция для показа ссылки через 1 секунду
+        function showLink() {
+            document.getElementById('language-link').style.display = 'block';
         }
 
-        window.onload = function() {
-            redirectToLanguage('pl'); // Замените 'en' на нужный язык по умолчанию
-        };
+        // Показываем ссылку через 1 секунду
+        setTimeout(showLink, 1000);
     </script>
+    <style>
+        /* Скрываем ссылку по умолчанию */
+        #language-link {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <p>If you are not redirected automatically, follow this <a href="https://book.squareofchanges.net/">link</a>.</p>
-    <p>
-        <a class="link-style-125702d0-0ad3-421b-a99c-5b412880e4f6 maglink" href="javascript:void(0);" onclick="redirectToLanguage('pl')">PL</a>
+    <p id="language-link">
+        <a class="link-style-125702d0-0ad3-421b-a99c-5b412880e4f6 maglink" target="_self" href="/pl/">PL</a>
     </p>
 </body>
 </html>
