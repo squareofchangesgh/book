@@ -5,8 +5,11 @@
     <title>Redirecting...</title>
     <script>
         window.onload = function() {
-            if (window.location.href !== 'https://book.squareofchanges.net/pl/') {
-                window.location.href = 'https://book.squareofchanges.net/pl/';
+            var currentUrl = window.location.href;
+            var targetUrl = 'https://book.squareofchanges.net/pl/';
+
+            if (currentUrl !== targetUrl) {
+                window.location.href = targetUrl;
             }
         };
     </script>
