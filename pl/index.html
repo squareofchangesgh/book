@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://book.squareofchanges.net">
     <title>Redirecting...</title>
     <script>
-        function redirectToPolish() {
-            setTimeout(function() {
-                window.location.href = 'https://book.squareofchanges.net/pl/';
-            }, 1000);
-        }
-        window.onload = redirectToPolish;
+        setTimeout(function() {
+            document.getElementById('language-link').style.display = 'block';
+        }, 1000);
     </script>
+    <style>
+        #language-link {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <p>If you are not redirected automatically, follow this <a href="https://book.squareofchanges.net/">link</a>.</p>
+    <p id="language-link">
+        <a class="link-style-125702d0-0ad3-421b-a99c-5b412880e4f6 maglink" target="_self" href="/pl/">PL</a>
+    </p>
 </body>
 </html>
 
